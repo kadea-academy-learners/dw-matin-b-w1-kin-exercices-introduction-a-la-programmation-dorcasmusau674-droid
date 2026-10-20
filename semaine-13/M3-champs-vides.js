@@ -20,4 +20,6 @@ Quelle est la liste complète des valeurs falsy en JavaScript ? (Indice : il y e
 
 // ✍️ Ton code ici 👇 (règles : const/let, ===, gabarits littéraux, fonctions fléchées, camelCase)
 
-
+const estRempli = (valeur) => (valeur ? 'rempli' : 'vide');
+const valeursTestees = ['','esther',0,42, null, undefined, NaN, '',false];
+console.log(valeursTestees.map(valeur => estRempli(valeur)));
